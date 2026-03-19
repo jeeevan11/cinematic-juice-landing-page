@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 
 export default defineConfig({
-  base: '/cinematic-juice-landing-page/',
+  base: process.env.GITHUB_ACTIONS ? '/cinematic-juice-landing-page/' : '/',
   plugins: [react()],
   resolve: {
     alias: {
