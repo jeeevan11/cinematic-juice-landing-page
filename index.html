@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#C8102E">
+  <title>PRESS | Cold-Pressed Juice</title>
+  
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=cabinet-grotesk@400,500,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="loading">
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress"></div>
+
+  <!-- SECTION 0: PRELOADER -->
+  <div class="preloader">
+    <div class="preloader-overlay"></div>
+    <div class="preloader-content">
+      <div class="preloader-circle"></div>
+      <div class="wordmark-container">
+        <span class="wordmark-letter">P</span>
+        <span class="wordmark-letter">R</span>
+        <span class="wordmark-letter">E</span>
+        <span class="wordmark-letter">S</span>
+        <span class="wordmark-letter">S</span>
+      </div>
+    </div>
+    <div class="preloader-progress-bar"></div>
+  </div>
+
+  <main>
+    <!-- SECTION 1: HERO -->
+    <section class="hero-section" id="hero">
+      <div class="hero-sticky">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-halo"></div>
+        <div class="hero-particles" id="particles-container"></div>
+        <div class="hero-overlay">
+          <h1 class="hero-title hero-title-1">SCROLL<br/>TO ANIMATE</h1>
+          <h1 class="hero-title hero-title-2">UNCORK<br/>THE MOMENT</h1>
+        </div>
+        <div class="hero-subtitle">
+          <p>Cold-pressed. Never compromised.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: FLAVOR STORY (Horizontal Scroll) -->
+    <section class="flavor-section" id="flavors">
+      <div class="flavor-sticky">
+        <div class="flavor-track">
+          
+          <div class="flavor-card card-1">
+            <div class="flavor-bg" style="background: url('/images/strawberry.png') center/cover; opacity: 0.6;"></div>
+            <h2 class="flavor-title">STRAWBERRY BURST</h2>
+            <div class="flavor-tags">
+              <span class="tag">No Added Sugar</span>
+              <span class="tag">100% Fruit</span>
+              <span class="tag">Cold Pressed</span>
+            </div>
+            <button class="pill-btn magnetic" data-cursor="hover">Discover</button>
+          </div>
+
+          <div class="flavor-card card-2">
+            <div class="flavor-bg" style="background: url('/images/citrus.png') center/cover; opacity: 0.6;"></div>
+            <h2 class="flavor-title">CITRUS GLOW</h2>
+            <div class="flavor-tags">
+              <span class="tag">Vitamin C Rich</span>
+              <span class="tag">Immunity Boost</span>
+            </div>
+            <button class="pill-btn magnetic" data-cursor="hover">Discover</button>
+          </div>
+
+          <div class="flavor-card card-3">
+            <div class="flavor-bg" style="background: url('/images/mint.png') center/cover; opacity: 0.6;"></div>
+            <h2 class="flavor-title">FOREST MINT</h2>
+            <div class="flavor-tags">
+              <span class="tag">Antioxidant</span>
+              <span class="tag">Refreshing</span>
+            </div>
+            <button class="pill-btn magnetic" data-cursor="hover">Discover</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: MANIFESTO -->
+    <section class="manifesto-section" id="manifesto">
+      <div class="manifesto-bg"></div>
+      <div class="manifesto-content">
+        <div class="manifesto-line-wrapper"><h2 class="manifesto-line">Every bottle is</h2></div>
+        <div class="manifesto-line-wrapper"><h2 class="manifesto-line">a moment of</h2></div>
+        <div class="manifesto-line-wrapper"><h2 class="manifesto-line">pure intention.</h2></div>
+        <hr class="manifesto-hr" />
+      </div>
+    </section>
+
+    <!-- SECTION 4: STATS BAR -->
+    <section class="stats-section" id="stats">
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-number"><span class="counter" data-target="12">0</span></div>
+          <div class="stat-label">Fruits Per Bottle</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span class="counter" data-target="0">0</span>g</div>
+          <div class="stat-label">Added Sugar</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span class="counter" data-target="48">0</span>hr</div>
+          <div class="stat-label">Cold-Press Cycle</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span class="counter" data-target="100">0</span>%</div>
+          <div class="stat-label">Organic Certified</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: MARQUEE -->
+    <section class="marquee-section">
+      <div class="marquee marquee-1">
+        <div class="marquee-track track-left">
+          <span>● COLD PRESSED ● NO PRESERVATIVES ● SMALL BATCH ● HAND SORTED </span>
+          <span>● COLD PRESSED ● NO PRESERVATIVES ● SMALL BATCH ● HAND SORTED </span>
+        </div>
+      </div>
+      <div class="marquee marquee-2">
+        <div class="marquee-track track-right">
+          <span>○ MADE IN INDIA ○ GLASS BOTTLE ○ ZERO WASTE ○ FARMER DIRECT </span>
+          <span>○ MADE IN INDIA ○ GLASS BOTTLE ○ ZERO WASTE ○ FARMER DIRECT </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: PRODUCT SHOWCASE -->
+    <section class="showcase-section" id="products">
+      <div class="showcase-grid">
+        <div class="product-card">
+          <div class="product-image" style="background: url('/images/strawberry.png') center/cover;"></div>
+          <h3 class="product-name">Strawberry Burst</h3>
+          <p class="product-meta">250ml · ₹149</p>
+          <button class="add-to-cart magnetic" data-cursor="hover"><span class="btn-text">+</span></button>
+        </div>
+        <div class="product-card">
+          <div class="product-image" style="background: url('/images/citrus.png') center/cover;"></div>
+          <h3 class="product-name">Citrus Glow</h3>
+          <p class="product-meta">250ml · ₹149</p>
+          <button class="add-to-cart magnetic" data-cursor="hover"><span class="btn-text">+</span></button>
+        </div>
+        <div class="product-card">
+          <div class="product-image" style="background: url('/images/mint.png') center/cover;"></div>
+          <h3 class="product-name">Forest Mint</h3>
+          <p class="product-meta">250ml · ₹149</p>
+          <button class="add-to-cart magnetic" data-cursor="hover"><span class="btn-text">+</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: FOUNDER STORY -->
+    <section class="founder-section">
+      <div class="founder-content">
+        <div class="founder-image"></div>
+        <div class="founder-quote-container">
+          <span class="quote-mark">"</span>
+          <h2 class="founder-quote">
+            <span class="quote-word">We</span> <span class="quote-word">obsess</span> <span class="quote-word">over</span> <span class="quote-word">the</span> <span class="quote-word">3</span> <span class="quote-word">minutes</span> <span class="quote-word">between</span> <span class="quote-word">pressing</span> <span class="quote-word">and</span> <span class="quote-word">bottling.</span> <span class="quote-word">That's</span> <span class="quote-word">where</span> <span class="quote-word">freshness</span> <span class="quote-word">lives.</span>
+          </h2>
+          <div class="seal-icon">
+             <svg viewBox="0 0 100 100" class="rotate-seal">
+               <path id="curve" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="transparent" />
+               <text fill="#C8102E" font-size="12" font-family="'Clash Display'" font-weight="600" letter-spacing="4"><textPath href="#curve">P R E S S · P U R E · J U I C E · </textPath></text>
+             </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION REACT SHADER DEMO -->
+    <section class="shader-section" style="width: 100vw; overflow: hidden; position: relative;">
+      <div id="react-root"></div>
+    </section>
+
+    <!-- SECTION 8: FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-logo">PRESS</div>
+      <div class="footer-copy">© 2026 PRESS. All rights reserved.</div>
+      <div class="footer-social">
+        <a href="#" class="magnetic" data-cursor="hover">Instagram</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script type="module" src="/main-react.tsx"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
