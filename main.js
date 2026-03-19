@@ -113,7 +113,7 @@ const frameCount = 40; // We have exactly 40 frames
 const images = [];
 const frameObj = { frame: 0 };
 
-const currentFrame = index => `/frames/ezgif-frame-${(index + 1).toString().padStart(3, '0')}.jpg`;
+const currentFrame = index => `./frames/ezgif-frame-${(index + 1).toString().padStart(3, '0')}.jpg`;
 
 // Setup initial canvas dimensions
 canvas.width = 1920;
